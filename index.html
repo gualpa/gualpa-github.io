@@ -1,0 +1,307 @@
+<style>
+    .member-img {
+        width: 150px; /* Tamaño deseado para las imágenes */
+        height: 150px; /* Tamaño deseado para las imágenes */
+        border-radius: 50%; /* Forma circular */
+        object-fit: cover; /* Para que la imagen se ajuste al contenedor sin perder la proporción */
+    }
+
+    p1.event-description {
+    opacity: 0.5;
+    font-size: 12px; /* Tamaño de letra más pequeño */
+}
+</style>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PISCIS</title>
+    <!-- para incluir estilos css externo-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <link rel="stylesheet" type="text/css" href="css/mi_estilo_CV.css" />
+    
+    <!--traigo tipografia desde google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap" rel="stylesheet">
+    <!--aqui traigo 3 tipografias desde google si quisiera variar en unos elementos una u otra-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <!-- iconos desde fontawsome Con Javascript-->
+    <script src="https://kit.fontawesome.com/a4e8658f9b.js" crossorigin="anonymous"></script>
+    <!-- iconos desde fontawsome con CSS no funciona no-PRO -->
+    <!--
+    <link rel="stylesheet" href="https://kit.fontawesome.com/a4e8658f9b.css" crossorigin="anonymous">
+    -->
+    </head>
+<body>
+<!-- barra de navegacion superior -->
+    <header class="mi-header">
+        <nav class="mi-nav">
+          <a href="#" class="logo mi-nav-link">PISCIS</a>
+          <button class="mi-nav-toggle" aria-label="Abrir menú"> <!--aria-label dice para que es el boton-->
+            <!-- <i class="fa-duotone fa-bars"></i>  el icono para la barra comprimida-->
+            <i class="fas fa-bars"></i> <!-- el icono para la barra comprimida-->
+        </button>
+          <ul class="mi-nav-menu">
+            <li class="mi-nav-menu-item">
+                <a href="#home" class="mi-nav-menu-link mi-nav-link ancla"><i class="fa-solid fa-house"></i> Inicio</a>
+            </li>
+            <li class="mi-nav-menu-item">                
+              <a href="#documentación" class="mi-nav-menu-link mi-nav-link ancla"><i class="fa-solid fa-file"></i> Documentación</a>
+            </li>
+            <li class="mi-nav-menu-item">                
+              <a href="#proyectos" class="mi-nav-menu-link mi-nav-link ancla"><i class="fa-solid fa-school"></i> Proyectos </a>
+            </li>
+            <li class="mi-nav-menu-item">                
+                <a href="#alcance" class="mi-nav-menu-link mi-nav-link ancla"><i class="fa-solid fa-earth"></i> Alcance</a>
+              </li>
+            <li class="mi-nav-menu-item">                
+              <a href="#contacto" class="mi-nav-menu-link mi-nav-link mi-nav-menu-link_active ancla"><i class="fa-solid fa-messages"></i> contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+<!-- fin barra de navegacion -->
+<!-- secciones del CV -->
+<section id="home" class="section_home container-fluid">
+    <div class="container-fluid">
+        <div class="col-sm-6">
+            <!-- <img src="https://randomuser.me/api/portraits/women/14.jpg" class="conborde" alt="foto de la persona"/> --> 
+            <img src="img/logo.png" class="conborde img-home" alt="foto del logo"/>       
+            
+        </div>
+        <div class="col-sm-6">          
+            <!-- <p>Mi nombre es</p> -->
+            <h1>PISCIS</h1>
+            <h4>Plataform for Interactive Search and CItizen Science</h4>
+            <div class="menu">
+            <p> ¡Te damos la bienvenidad a PISCIS, hemos creado una plataforma digital innovadora basada en Django, el framework web de Python más avanzado, para simplificar todo el proceso de generación y análisis de datos a través de encuestas de ciencia ciudadana.
+
+                Imagina explorar cualquier tipo de imágenes y participar en la clasificación de datos reales de una manera fácil y entretenida. Con nuestra aplicación, no solo tendrás acceso a una poderosa herramienta web, que maximizará el alcance de tu proyecto, sino que también te unirás a una comunidad apasionada por la ciencia y la investigación.
+                
+                ¿Con ganas de sumergirte en el mundo de la ciencia ciudadana? ¡Estás en el lugar correcto! Explora nuestra completa documentación para comenzar tu viaje de descubrimiento científico. Y si quieres llevar tus investigaciones al siguiente nivel, ¡no dudes en ponerte en contacto con nuestro equipo!</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- segunda seccion -->
+<section id="documentación" class="section_info container-fluid">      
+    <div class="container-fluid"> 
+        <div class="col-md-6">
+            <h2>Documentación</h2>
+            <p> Lanzamiento de “PISCIS : Platform for Interactive Search and Citizen Science”. 
+                MIT License en los portales Github y ReadtheDocs.
+                Miembros: I.V. Daza-Perilla, I. G. Alfaro, J. A. Benavides, M. Lares, M. V. Santucho, 
+                J. B. Cabral, A. L. O’Mill, F. Rodriguez, & M. Koraj. 
+                Puedes acceder a toda al repositorio y documentación del proyecto PISCIS en: </p>
+            <ul>
+                <li>
+                    <i class="fa-brands fa-github"></i>
+                    <a href="https://github.com/PISCIS-project/PISCIS" target="_blank">Github</a>
+                </li>
+                <li>
+                    <i class="fas fa-file"></i>
+                    <a href="https://piscis.readthedocs.io/en/latest/configure/models.html"target="_blank">Read the Docs</a>
+                </li>
+                <li>
+                    <i class="fas fa-youtube"></i>
+                    <a href="https://www.youtube.com/watch?v=CsaXcQoBt_M&ab_channel=IGNACIOGERM%C3%81NALFARO"target="_blank">Video Demo</a>
+                </li>                         
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <!--img src="img/readthedocs.png" class="conborde img-home" alt="libros, pizarra, laptop"/-->     
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CsaXcQoBt_M" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+<!-- tercera seccion -->
+
+<section id="proyectos" class="section_info container-fluid">
+    <div class="container-fluid"> </div>
+        <div class="col-sm-6">
+            <h2> Proyectos </h2>
+            <h4><a href="https://paresdegalaxias.iate.conicet.unc.edu.ar/">Pares de galaxias</a></h4>
+            
+            <p> 
+                El estudio de pares de galaxias es crucial en la comprensión de la estructura a gran escala del Universo. 
+                Aunque las galaxias suelen encontrarse en grupos y cúmulos, la interacción más "pequeña" a escala cósmica 
+                se da entre pares de galaxias. A través de observaciones y catálogos como el SDSS y el RASS, así como simulaciones
+                 computacionales como Millenium, EAGLE, Illustris y TNG-Project, se investiga la dinámica y encuentros entre estas parejas. 
+                 Un catálogo de pares de galaxias de Rodriguez et al. (2020), basado en datos del SDSS, 
+                 contiene 8182 sistemas con mediciones de corrimiento al rojo, donde se consideran criterios de aislamiento respecto 
+                 a otros objetos. La clasificación de estos pares puede consultarse en el artículo de William C. Keel et al. (2013). </p>
+        </div>
+    
+</section>
+
+<!-- Seccion Alcance --> <!-- Seccion Publicaciones -->
+<section id="alcance" class="section_info container-fluid">
+    <h2> Alcance </h2>
+</section>
+<div style="text-align:center;">
+    <h4>Parte del Programa de Ciencia Ciudadana Nacional</h4>
+    <p style="max-width: 600px; margin: 0 auto;">Desde el Ministerio de Ciencia, Tecnología e Innovación junto con el Laboratorio de Aceleración del Programa de las Naciones Unidas co-crearon el Desarrollo (PNUD) en Argentina un mapeo de iniciativas nacionales de Ciencia Ciudadana que pone en valor proyectos que desarrollaron herramientas para problematizar, medir y actuar sobre diversos tipos de fenómenos, e identificar soluciones para abordarlos. PISCIS a partir del 2023 inicio a ser parte de este programa <a href="https://www.argentina.gob.ar/ciencia/sact/ciencia-ciudadana/programa-de-ciencia-ciudadana">aquí</a>.</p>
+</div>
+<div style="text-align:center;">
+    <p> </p>
+</div>
+
+<div class="container-fluid"> </div>
+    <div class="col-sm-6">
+                    <h4>Publicaciones</h4>
+                    <ul>
+                        <li>
+                            <strong>10/2020</strong> - <a href="http://www.astronomiaargentina.org.ar/uploads/docs/craaa62.pdf" target="_blank">Publicación sin referato en libro de Resúmenes</a>
+                            <p1 class="event-description">
+                                62ª Reunión anual de la Asociación Argentina de Astronomía en formato webinar. Co-organizada por la facultad de Ciencias Exactas, Ingeniería Agrimensura dependiente de la Universidad Nacional de Rosario y el Complejo Astronómico Municipal dependiente de la Secretaría de Cultura y Educación de la Municipalidad de Rosario. Miembros: I.V. Daza-Perilla, I. G. Alfaro, J. A. Benavides, M. Lares, M. V. Santucho, J. B. Cabral, A. L. O’Mill, F. Rodriguez, & M. Koraj.
+                            </p1>
+                        </li>
+                        <li>
+                            <strong>09/2021</strong> - <a href="http://cienciaciudadana.cl/wp-content/uploads/2021/05/Libro-Resumen-Congreso-Ciencia-Ciudadana-2021.pdf" target="_blank">Publicación sin referato en libro de Resúmenes</a>
+                            <p1 class="event-description">
+                                Congreso Ciencia Ciudadana Chile 2021. A cargo de: I.V. Daza-Perilla
+                            </p1>
+                        </li>
+                        <li>
+                            <strong>03/2023</strong> - <a href="https://revistas.uautonoma.cl/index.php/scr/article/view/2134" target="_blank">Publicación con referato</a>
+                            <p1 class="event-description">
+                                Revista SciComm Report, (SciComm rep.) SciComm Report 2023-04-25 | Journal article DOI: 10.32457/scr.v3i1.2134 CONTRIBUTORS: Germán Alfaro; Ingrid Vanessa Daza Perilla; José Benavides Blanco; Marcelo Lares; Victoria Santucho; Juan Cabral; Ana Laura O’mill; Facundo Rodríguez; Mauricio Koraj
+                            </p1>
+                        </li>
+                    </ul>
+    </div>          
+    <div class="section_home container-fluid">
+                    <h4>Charlas, Seminarios y Presentaciones Mural</h4>
+                    <ul>
+                        <li>
+                            <strong>10/2020</strong> - <a href="https://drive.google.com/file/d/1sks0NoWavlTlc1Rg4XJt9Rp4ov9KBdpp/view" target="_blank">Presentación Mural en el eje de Historia, Enseñanza Y Divulgación de Astronomía</a>
+                            <p1  class="event-description">
+                                62ª Reunión anual de la Asociación Argentina de Astronomía en formato webinar. Co-organizada por la facultad de Ciencias Exactas, Ingeniería Agrimensura dependiente de la Universidad Nacional de Rosario y el Complejo Astronómico Municipal dependiente de la Secretaría de Cultura y Educación de la Municipalidad de Rosario. Miembros: I.V. Daza-Perilla, I. G. Alfaro, J. A. Benavides, M. Lares, M. V. Santucho, J. B. Cabral, A. L. O’Mill, F. Rodriguez, & M. Koraj.
+                            </p1>
+                        </li>
+                        <li>
+                            <strong>04/2021</strong> - <a href="http://fof.oac.uncor.edu/2021/posters/" target="_blank">Presentación Mural</a>
+                            <p1 class="event-description">
+                                XI Friends of Friends Meeting Linking astronomy and friends in Córdoba Presentado por: I. G. Alfaro
+                            </p1>
+                        </li>
+                        <li>
+                            <strong>09/2021</strong> - <a href="https://cienciaciudadana.cl/congreso2021/" target="_blank">Presentación Oral en la categoría de Tecnología y Datos</a>
+                            <p1 class="event-description">
+                                Congreso Ciencia Ciudadana Chile 2021. A cargo de: I.V. Daza-Perilla
+                            </p1>
+                        </li>
+                        <li>
+                            <strong>11/2021</strong> - <a href="https://satec.iate.conicet.unc.edu.ar/ https://www.youtube.com/watch?v=2oFTPbTWq4E&t=86s&ab_channel=OACSeminarios" target="_blank">Presentación Oral</a>
+                            <p1 class="event-description">
+                                El Workshop Scientific And Technical Exchange Conferences (SATEC), realizado los días 17 y 24 de noviembre y 1 de diciembre del 2021 A cargo de: I. G. Alfaro
+                            </p1>
+                        </li>
+                    </ul>
+    </div>
+    <div class="col-sm-6">
+                    <h4>Notas de Prensa y Difusión</h4>
+                    <ul>
+                        <li>
+                            <strong>06/2021</strong> - <a href="https://iate.oac.uncor.edu/2021/06/16/piscis-una-herramienta-de-ciencia-ciudadana-para-analizar-imagenes-astronomicas/" target="_blank">Entrevista ‘’PISCIS: una herramienta de ciencia ciudadana para analizar imágenes astronómicas’’</a>
+                            <p1 class="event-description">
+                                Nota de periodismo científico para la página del Instituto de Astronomía Teórica y Experimental (IATE). A cargo de: I.V. Daza-Perilla, I. G. Alfaro, J. A. Benavides y M. Lares
+                            </p1>
+                        </li>
+                        <li>
+                            <strong>06/2021</strong> - <a href="https://periferia.com.ar/investigacion/c-rdoba-desarrollan-una-herramienta-de-ciencia-ciudadana-para-analizar-im-genes-astron-micas/" target="_blank">Entrevista ‘’Córdoba: desarrollan una herramienta de ciencia ciudadana para analizar imágenes astronómicas’’</a>
+                            <p1 class="event-description">
+                                Nota de periodismo científico para PERIFERIA un portal periodístico independiente sobre ciencia y tecnología en Argentina y América latina. A cargo de: I.V. Daza-Perilla, I. G. Alfaro J. A. Benavides y M. Lares
+                            </p1>
+                        </li>
+                        <li>
+                            <strong>06/2021</strong> - <a href="https://www.ivoox.com/lunas-de-saturno-capitulo-27-audios-mp3_rf_72234578_1.html" target="_blank">Entrevista ‘’proyecto Piscis de Ciencia Ciudadana.’’</a>
+                            <p1 class="event-description">
+                                Lunas de Saturno es un podcast sobre astronomía abordada desde diferentes perspectivas - Capítulo 27 (Emisora radio bicicleta) A cargo de: I.V. Daza-Perilla
+                            </p1>
+                        </li>
+                        <li>
+                            <strong>06/2022</strong> - <a href="https://planetario.buenosaires.gob.ar/piscis-ciencia-ciudadana-en-astronomia" target="_blank">Charla invitada</a>
+                            <p1 class="event-description">
+                                Encuentros de Ciencia - Planetario Galileo Galilei. A cargo de: I.V. Daza-Perilla y I. G. Alfaro
+                            </p1>
+                        </li>
+                    </ul>
+
+            </div>
+        </div>     
+</section>
+
+
+
+<section id="Miembros" class="section_info container-fluid">
+    <div class="container-fluid col-sm-12"> 
+        <h2> Miembros </h2>
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="img/miembro1.jpg" alt="Miembro 1" class="member-img">
+                <p>Becaria Doctoral</p>
+                <p>Temas: Astronomía Galáctica y Extragaláctica</p>
+                <p>vanessa.daza@unc.edu.ar</p>
+                <a href="https://github.com/vanedaza">Github</a>
+            </div>
+            <div class="col-sm-6">
+                <img src="img/miembro2.jpeg" alt="Miembro 2" class="member-img">
+                <p>Becario Pos-Doctoral </p>
+                <p>Temas: Estructura en Gran Escala del Universo</p>
+                <p>german.alfaro@unc.edu.ar</p>
+                <a href="https://github.com/geralfaro">Github</a>
+            </div>
+        </div>
+
+</section>
+
+
+<!-- Seccion contacto -->
+<section id="contacto" class="section_info container-fluid">
+    <div class="container-fluid col-sm-12"> 
+        <h2> Contacto </h2>
+        <!--form action="" method="get" FORMA ORIGINAL-->
+        <form action="enviar_email.php" method="post">
+
+        <div>
+            <label>Nombre</label>
+            <input type="text" name="nombre" placeholder="Ingrese solo su nombre de pila" required style="color: black;"/>
+        </div>
+        <div>
+            <label>Apellido</label>
+            <input type="text" name="apellido" placeholder="Ingrese su apellido" required style="color: black;"/>
+        </div>
+        <div>
+            <label>e-mail</label>
+            <input type="email" name="email" placeholder="Ingrese un e-mail" required style="color: black;"/>
+        </div>
+        <div>
+            <label>mensaje</label>
+            <textarea name="mensaje" placeholder="Escriba su mensaje" required style="color: black;"></textarea>
+        </div>
+        <button type="submit">Envíe su mensaje</button>
+        </form>
+    </div>
+</section>
+
+
+<!-- ultima seccion Afilicianos -->
+<section id="Afilasiones" class="section_info container-fluid">
+    <div class="container-fluid col-sm-12"> 
+        <a href="https://iate.oac.uncor.edu/">
+            <img src="img/IATE-01.png" alt="IATE" style="display: block; margin: 0 auto;">
+        </a>
+    </div>
+</section>
+
+
+
+<script src="js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+</body>
+</html>
