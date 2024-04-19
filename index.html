@@ -288,6 +288,33 @@
     </div>
 </section>
 
+    
+<!-- Prueba de mail-->
+<form id="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" inputmode="text" required />
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          inputmode="email"
+          required
+        />
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          inputmode="text"
+          required
+        ></textarea>
+        <button type="submit">Submit</button>
+      </form>
+<!--fin Prueba de mail-->
+
+
+
+    
 
 <!-- ultima seccion Afilicianos -->
 <section id="Afilasiones" class="section_info container-fluid">
@@ -300,7 +327,24 @@
 
 
 
-<script src="js/index.js"></script>
+<script src="js/index.js">
+          var mailtoLink =
+            "mailto:srgualpa@unc.edu.ar?subject=Contacting%20Best%20Codes&body=" +
+            message +
+            "%0D%0A%0D%0AName:%20" +
+            name +
+            "%0D%0AEmail:%20" +
+            email;
+
+          // Do not encode the whole URI, only parameters
+          window.location.href = mailtoLink;
+
+          // Reset the form
+          document.getElementById("contact-form").reset();
+        });
+
+    
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     
 </body>
